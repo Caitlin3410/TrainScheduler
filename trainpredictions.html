@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Train Scheduler</title>
+
+    <!-- STYLESHEETS: BOOTSTRAP, GOOGLE FONTS, RESET AND CUSTOM -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <div class="jumbotron-fluid header">
+        <nav class="navbar navigation">
+            <p class="navbar-brand" href="#">
+
+            </p>
+        </nav>
+
+        <!-- HEADER -->
+        <h1></h1>
+    </div>
+
+    <!-- ADD TRAIN -->
+    <div class="container add-train">
+        <div class="card">
+            <div class="card-header">
+                Track a Train!
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="train-name">Train Name</label>
+                        <input type="text" class="form-control" id="train-name" placeholder="Train Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Destination" />
+                    </div>
+                    <div class="form-group">
+                        <label for="first-time">First Train Time</label>
+                        <input type="text" class="form-control" id="first-time" placeholder="First Train Time" />
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency" placeholder="Frequency" />
+                    </div>
+                    <button type="submit" class="btn">Add Train</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- CURRENT TRAIN SCHEDULE -->
+    <div class="container train-schedule">
+        <div class="card">
+            <div class="card-header">
+                Current Train Schedule
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <nav class="navbar fixed-bottom footer">
+
+    </nav>
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/ff8d25dcae.js" crossorigin="anonymous"></script>
+
+    <!-- JAVASCRIPT, JQUERY -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
